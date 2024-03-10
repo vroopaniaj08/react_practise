@@ -17,12 +17,12 @@ export default class App extends Component{
   }
   render(){
     return <>
-      {/* <Link to = "/">home</Link> */}
-      <Link to = "/child1">child1</Link>
-      <Link to = "/child2">child2</Link>
+      <Link to = "/">home</Link>&nbsp;&nbsp;
+      <Link to = "/child1">child1</Link>&nbsp;&nbsp;
+      <Link to = "/child2">child2</Link>&nbsp;&nbsp;
       <masterContext.Provider value = {this.state}>
         <Routes>
-          {/* <Route exact path='/' element = {<Home></Home>}></Route> */}
+          <Route exact path='/' element = {<Home></Home>}></Route>
           <Route exact path='/child1' element = {<Child1></Child1>}></Route>
           <Route exact path='/child2' element = {<Child2></Child2>}></Route>
         </Routes>
